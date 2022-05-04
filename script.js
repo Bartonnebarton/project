@@ -1,27 +1,29 @@
-"use strict";
+const str = "teSt"
+// console.log(str.toUpperCase());
 
+console.log(str.toLowerCase());
 
-let incr = 10,
-    decr = 10;
+console.log(str);
 
-//++incr;
-//--decr;
+const fruit =  "Some fruito";
 
-console.log(incr++);
-console.log(--decr);
+console.log(fruit.indexOf("o"));
 
-console.log(5%2);
+const logg = "Hello world";
 
-console.log(2*4 === 8);
+console.log(logg.slice(-6, -1))
 
-const isChecked = false,
-     isClose = false;
+console.log(logg.substring(6, 11))
 
-     console.log(isChecked || !isClose)
+console.log(logg.substr(6, 5))
 
+const num = 12.2;
 
+console.log(Math.round(num));
 
+const tet = "12.2px";
 
+console.log(parseInt(tet))
 
-
+console.log(parseFloat(tet))
 
