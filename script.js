@@ -1,29 +1,30 @@
-const str = "teSt"
-// console.log(str.toUpperCase());
 
-console.log(str.toLowerCase());
 
-console.log(str);
+let str = 'some';
 
-const fruit =  "Some fruito";
+let strObj = new String(str);
 
-console.log(fruit.indexOf("o"));
+console.log(typeof(str));
+console.log(typeof(strObj));
 
-const logg = "Hello world";
+// console.dir([1,2,3]);
 
-console.log(logg.slice(-6, -1))
+const soldier = {
+    health: 400,
+    armor: 100,
+    sayHello: function() {
+        console.log('Hello');
+    }
+};
 
-console.log(logg.substring(6, 11))
+const john = Object.create(soldier);
+// const john = {
+//     health: 100
+// };
 
-console.log(logg.substr(6, 5))
+// john.__proto__ = soldier;
 
-const num = 12.2;
+// Object.setPrototypeOf(john, soldier);
 
-console.log(Math.round(num));
-
-const tet = "12.2px";
-
-console.log(parseInt(tet))
-
-console.log(parseFloat(tet))
-
+console.log(john.health);
+john.sayHello()
